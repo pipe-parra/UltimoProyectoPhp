@@ -29,7 +29,7 @@ class PedidoController
     }
 
     public function verProduccion(){
-      
+              
       $pedidos = $this->pedido->listar();
       include 'views/produccion.php';
     }

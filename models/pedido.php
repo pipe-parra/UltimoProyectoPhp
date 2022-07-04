@@ -6,7 +6,6 @@ class Pedido {
     //Declaración de Atributos
     private $mesa;
     private $descripcion;
-
    
     //Declaración de constructor
 

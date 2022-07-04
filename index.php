@@ -19,7 +19,7 @@ if(!$validacion){
     if($op=="agregar"){
         $pedidoController->agregar();
     }
-
+    
     if($op=="agregarPedido"){
         $mesa = $_POST['txtMesa'];
         $descripcion = $_POST['txtDescripcion'];

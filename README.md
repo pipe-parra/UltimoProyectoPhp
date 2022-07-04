@@ -1,4 +1,4 @@
-# Evaluacion3 Open Source PHP
+# MVC Arquitectura ultimas pruebas en PHP
 App Web desarrollada em PHP bajo arquitectura MVC para creacion de reservas, las cuales se almacenaran en la Base de Datos (bdreservoir como especifica la materia).
 
 # Dudas DBRESERVOIR
