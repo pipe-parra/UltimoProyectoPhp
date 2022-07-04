@@ -40,7 +40,19 @@ if(!$validacion){
         $mesa = $_GET['mesa'];
         $pedidoController->eliminar($mesa);
     }
-
+   
+    if($op=="verProduccion"){
+                      
+        $pedidoNuevo = new Pedido();
+                       
+        $pedidoController->listar();
+    }
+    if($op=="verPedidos"){
+                      
+        $pedidoNuevo = new Pedido();
+                       
+        $pedidoController->listar();
+    }
 
 }
 

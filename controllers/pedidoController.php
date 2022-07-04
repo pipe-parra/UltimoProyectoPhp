@@ -28,6 +28,18 @@ class PedidoController
         include 'views/agregar.php';
     }
 
+    public function verProduccion(){
+      
+      $pedidos = $this->pedido->listar();
+      include 'views/produccion.php';
+    }
+
+    public function verPedidos(){
+      
+        $pedidos = $this->pedido->listar();
+        include 'views/pedidos.php';
+      }
+
     public function agregarPedido($pedidoNuevo)
     {
       $this->pedido->agregar($pedidoNuevo);
@@ -35,35 +47,35 @@ class PedidoController
       include 'views/listado.php';
     }
 
-    public function eliminar($rut)
+    public function eliminar($mesa)
     {
-        $this->pedido->eliminar($rut);
+        $this->pedido->eliminar($mesa);
         $pedidos = $this->pedido->listar();
         include 'views/listado.php';
     }
 
-    public function editar($rut)
-    {
-        $pedido = $this->pedido->buscar($rut);
-        include 'views/editar.php';
-    }
+    // public function editar($rut)
+    // {
+    //     $pedido = $this->pedido->buscar($rut);
+    //     include 'views/editar.php';
+    // }
 
-    public function editarPedido($pedido)
-    {
-      $this->pedido->editar($pedido);
-      $pedidos = $this->pedido->listar();
-      include 'views/listado.php';
-    }
+    // public function editarPedido($pedido)
+    // {
+    //   $this->pedido->editar($pedido);
+    //   $pedidos = $this->pedido->listar();
+    //   include 'views/listado.php';
+    // }
 
-    public function buscar()
-    {   $pedido = null;
-        include 'views/buscar.php';
-    }
+    // public function buscar()
+    // {   $pedido = null;
+    //     include 'views/buscar.php';
+    // }
 
-    public function buscarApellido($apellido)
-    {
-        $pedido = $this->pedido->buscarApellido($apellido);
-        include 'views/buscar.php';
-    }
+    // public function buscarApellido($apellido)
+    // {
+    //     $pedido = $this->pedido->buscarApellido($apellido);
+    //     include 'views/buscar.php';
+    // }
 
 }

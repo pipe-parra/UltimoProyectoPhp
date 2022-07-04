@@ -51,7 +51,7 @@ require_once("C:/xampp/htdocs/proyectoS6/controllers/pedidoController.php");
                 <?php    } ?>
                 </tbody>
             </table>
-            <button type="button" class="btn btn-primary" onclick="location='index.php?op=agregarPedido'">Agregar registro</button>
+            <button type="button" class="btn btn-primary" onclick="location='/proyectoS6/index.php'">Volver</button>
         </body>
 
         </html>

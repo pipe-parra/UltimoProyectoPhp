@@ -27,7 +27,7 @@ require_once("C:/xampp/htdocs/proyectoS6/controllers/pedidoController.php");
        
 
                 
-<div class="row mb-3"><h3>Mesa</h3><select name="txtMesa" class="form-select">
+<div class="row mb-3"><h3>Mesa</h3><select name="txtMesa" id="txtMesa"  class="form-select">
             <option value="0">Combo Box</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -52,11 +52,11 @@ require_once("C:/xampp/htdocs/proyectoS6/controllers/pedidoController.php");
             
             </select> </div> <br>
 <div class="row mb-3"><h3>Descripcion</h3>
-            <input type="text" name="txtDescripcion">
+            <input type="text" name="txtDescripcion" id="txtDescripcion">
 
 </div>
 <div class="row d-flex ">
-<a class="col-lg-6 col-sm-6 align-self-start" href="/proyectoS6/views/listado.php"><input class="btn btn-secondary" value="Ver Pedidos"></a>
+<a class="col-lg-6 col-sm-6 align-self-start" href="/proyectoS6/index.php?op=verPedidos"><input class="btn btn-secondary" value="Ver Pedidos"></a>
 <a class="col-lg-6 col-sm-6 align-self-end" href=""><input class="btn btn-primary" type="submit" value="Agregar"></a>
 </div>
 

@@ -25,7 +25,7 @@
   
             <a href="views/pedidos.php" style="text-decoration: none !important;"><input class="btn btn-primary" value="Ir a Pedidos"></a> <br> <br> <br>
     
-            <a href="views/produccion.php" style="text-decoration: none !important;"><input class="btn btn-primary" value="Ver Produccion"></a>
+            <a href="/proyectoS6/index.php?op=verProduccion" style="text-decoration: none !important;"><input class="btn btn-primary" value="Ver Produccion"></a>
         </form>    
 
 
