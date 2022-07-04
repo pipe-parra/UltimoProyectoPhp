@@ -23,15 +23,12 @@ if(!$validacion){
     if($op=="agregarPedido"){
         $mesa = $_POST['txtMesa'];
         $descripcion = $_POST['txtDescripcion'];
-      
-        
+              
         $pedidoNuevo = new Pedido();
         
         $pedidoNuevo->setMesa($mesa);
         $pedidoNuevo->setDescripcion($descripcion); 
-         
-
-
+        
         $pedidoController->agregarPedido($pedidoNuevo);
     }
 

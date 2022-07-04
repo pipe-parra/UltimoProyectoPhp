@@ -25,57 +25,45 @@ class PedidoController
 
     public function agregar()
     {
-        include 'views/pedidos.php';
+        include 'views/agregar.php';
     }
 
     public function agregarPedido($pedidoNuevo)
     {
       $this->pedido->agregar($pedidoNuevo);
       $pedidos = $this->pedido->listar();
-      include 'views/pedidos.php';
-      echo "<div style='color: green ;margin-top: 250px; line-height: 65%; font-family:Montserrat; text-align:center;'><h1>Pedido ingresado correctamente</h1><br>";   //Mensaje para avisar que todo es correcto
-      
+      include 'views/listado.php';
     }
 
-    public function verPedido(){
-        $pedidos = $this->pedido->listar();
-        include 'views/listado';
-    }
-
-    public function verProduccion(){
-        $pedidos = $this->pedido->listar();
-        include 'views/produccion';
-    }
-
-    public function eliminar($mesa)
+    public function eliminar($rut)
     {
-        $this->pedido->eliminar($mesa);
+        $this->pedido->eliminar($rut);
         $pedidos = $this->pedido->listar();
         include 'views/listado.php';
     }
 
-    // public function editar($mesa)
-    // {
-    //     $pedido = $this->pedido->buscar($rut);
-    //     include 'views/editar.php';
-    // }
+    public function editar($rut)
+    {
+        $pedido = $this->pedido->buscar($rut);
+        include 'views/editar.php';
+    }
 
-    // public function editarPedido($pedido)
-    // {
-    //   $this->pedido->editar($pedido);
-    //   $pedidos = $this->pedido->listar();
-    //   include 'views/listado.php';
-    // }
+    public function editarPedido($pedido)
+    {
+      $this->pedido->editar($pedido);
+      $pedidos = $this->pedido->listar();
+      include 'views/listado.php';
+    }
 
-    // public function buscar()
-    // {   $pedido = null;
-    //     include 'views/buscar.php';
-    // }
+    public function buscar()
+    {   $pedido = null;
+        include 'views/buscar.php';
+    }
 
-    // public function buscarApellido($apellido)
-    // {
-    //     $pedido = $this->pedido->buscarApellido($apellido);
-    //     include 'views/buscar.php';
-    // }
+    public function buscarApellido($apellido)
+    {
+        $pedido = $this->pedido->buscarApellido($apellido);
+        include 'views/buscar.php';
+    }
 
 }

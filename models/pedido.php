@@ -100,9 +100,8 @@ class Pedido {
            $pedido= new Pedido();
            $pedido->setMesa($fila["mesa"]);
            $pedido->setDescripcion($fila["descripcion"]); 
-                 
-        
-           $pedidos[] =$pedido;
+                  
+           $pedidos[]=$pedido;
         }
         return $pedidos;
     

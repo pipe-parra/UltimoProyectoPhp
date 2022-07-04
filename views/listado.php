@@ -1,3 +1,7 @@
+<?php
+require_once("C:/xampp/htdocs/proyectoS6/models/pedido.php");
+require_once("C:/xampp/htdocs/proyectoS6/controllers/pedidoController.php");
+?>
     <DOCTYPE html>
         <html>
 
@@ -39,7 +43,7 @@
                 <tbody>
                     <tr>
                         <?php
-                        foreach ((array)$pedidos as $pedido) { ?>
+                        foreach ($pedidos as $pedido) { ?>
                             <td><?php echo $pedido->getMesa() ?></td>
                             <td><?php echo $pedido->getDescripcion() ?></td>
                             <td><a href="index.php?op=eliminar&mesa=<?php echo $pedido->getMesa() ?>">Eliminar</a></td>
@@ -51,3 +55,4 @@
         </body>
 
         </html>
+        

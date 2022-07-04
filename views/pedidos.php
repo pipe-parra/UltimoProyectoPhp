@@ -1,3 +1,7 @@
+<?php
+require_once("C:/xampp/htdocs/proyectoS6/models/pedido.php");
+require_once("C:/xampp/htdocs/proyectoS6/controllers/pedidoController.php");
+?>
 <DOCTYPE html>
     <html>
 
