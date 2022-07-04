@@ -49,39 +49,7 @@ class Pedido {
         $stmt->execute();
     }
 
-    // public function buscar($mesa){
-    //     $db= new DB();
-    //     $stmt =  $db->getConexion()->prepare("SELECT * FROM pedido WHERE mesa = ?");
-    //     $stmt->bindParam(1, $mesa);
-    //     $stmt->execute();
-    //     $resultado = $stmt -> fetch();
     
-    //     $mesa = $resultado['mesa'];
-    //     $descripcion = $resultado['descripcion'];
-  
-    
-    //     $pedido = new Pedido();
-        
-    //     $pedido->setMesa($mesa);
-    //     $pedido->setDescripcion($descripcion); 
-      
-
-    //     return $pedido;
-
-    // }
-    // public function editar($pedido){
-    //     $mesa= $pedido->getMesa();
-    //     $descripcion= $pedido->getDescripcion(); 
-     
-
-    //     $db= new DB();
-    //     $stmt =  $db->getConexion()->prepare("UPDATE pedido set  descripcion =?,  WHERE mesa=?");
-    //     $stmt->bindParam(1,  $descripcion);
-    //     $stmt->bindParam(2,  $apellido);
-  
-
-    //     $stmt->execute();
-    // }
 
     public function eliminar($mesa){
         $db= new DB();

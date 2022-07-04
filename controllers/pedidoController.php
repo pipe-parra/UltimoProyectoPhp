@@ -56,28 +56,6 @@ class PedidoController
         include 'views/listado.php';
     }
 
-    // public function editar($rut)
-    // {
-    //     $pedido = $this->pedido->buscar($rut);
-    //     include 'views/editar.php';
-    // }
 
-    // public function editarPedido($pedido)
-    // {
-    //   $this->pedido->editar($pedido);
-    //   $pedidos = $this->pedido->listar();
-    //   include 'views/listado.php';
-    // }
-
-    // public function buscar()
-    // {   $pedido = null;
-    //     include 'views/buscar.php';
-    // }
-
-    // public function buscarApellido($apellido)
-    // {
-    //     $pedido = $this->pedido->buscarApellido($apellido);
-    //     include 'views/buscar.php';
-    // }
 
 }
