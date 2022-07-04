@@ -44,7 +44,7 @@ class PedidoController
     {
       $this->pedido->agregar($pedidoNuevo);
       $pedidos = $this->pedido->listar();
-      include 'views/inicio.php';
+      include 'views/pedidos.php';
       echo "<div style='color: green ;margin-top: 250px; line-height: 65%; font-family:Montserrat; text-align:center;'><h1>Pedido ingresado correctamente</h1><br>"; 
 
     }
